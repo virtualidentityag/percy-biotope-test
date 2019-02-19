@@ -30,3 +30,4 @@ If we want to add a test env for example to a project with the token `12345678`,
 Add a test you can run puppeteer in. Look at the example in `test/vr/test.js`
 
 ## Run
+Look in the package.json for the `test:vr` script. Add all the other scripts that are needed for this
