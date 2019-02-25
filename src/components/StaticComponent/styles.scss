@@ -1,0 +1,26 @@
+@import "~@biotope/element/lib/host.mixin";
+
+@include host('static-component') {
+    h1, h2, h3, h4, h5, h6, p {
+        line-height: 1.5em;
+    }
+    .static__component {
+        margin: 0 20%;
+        padding: 5%;
+        background-color: purple;
+        color: white;
+
+        p:nth-of-type(1) {
+            font-size: 0.5em;
+        }
+
+        p:nth-of-type(3) {
+            font-size: 1.5em;
+            color: rebeccapurple;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}

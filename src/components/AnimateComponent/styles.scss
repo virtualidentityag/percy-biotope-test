@@ -1,0 +1,57 @@
+@import "~@biotope/element/lib/host.mixin";
+
+@include host('animate-component') {
+    .animate__component {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .flipbox {
+        padding: 50px;
+        background-color: purple;
+        color: white;
+        text-align: center;
+
+        -webkit-animation: flip-horizontal 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+        animation: flip-horizontal 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+        animation-iteration-count: infinite;
+
+        &--2 {
+            animation-duration: 1s;
+            animation-delay: 0.5s;
+        }
+        &--3 {
+            animation-duration: 1.5s;
+            animation-delay: 1s;
+        }
+        &--4 {
+            animation-duration: 2s;
+            animation-delay: 1.5s;
+        }
+        &--5 {
+            animation-duration: 2.5s;
+            animation-delay: 2s;
+        }
+    }
+
+@-webkit-keyframes flip-horizontal {
+    0% {
+        -webkit-transform: rotateX(0);
+        transform: rotateX(0);
+    }
+    100% {
+        -webkit-transform: rotateX(-180deg);
+        transform: rotateX(-180deg);
+    }
+  }
+  @keyframes flip-horizontal {
+    0% {
+        -webkit-transform: rotateX(0);
+        transform: rotateX(0);
+    }
+    100% {
+        -webkit-transform: rotateX(-180deg);
+        transform: rotateX(-180deg);
+    }
+  }
+  
+}
