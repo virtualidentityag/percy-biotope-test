@@ -1,4 +1,4 @@
-@import "~@biotope/element/lib/host.mixin";
+@import "node_modules/@biotope/element/lib/host.mixin";
 
 @include host('static-component') {
     h1, h2, h3, h4, h5, h6, p {

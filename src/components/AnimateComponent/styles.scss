@@ -1,4 +1,4 @@
-@import "~@biotope/element/lib/host.mixin";
+@import "node_modules/@biotope/element/lib/host.mixin";
 
 @include host('animate-component') {
     .animate__component {
