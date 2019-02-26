@@ -7,6 +7,6 @@ interface AnimateJSComponentTemplateData {
 export default (render: Function, data: AnimateJSComponentTemplateData) => {
     return render`
         <style>${styles.toString()}</style>
-        <div>Fill me</div>
+        <div id="str"></div>
     `;
 }
